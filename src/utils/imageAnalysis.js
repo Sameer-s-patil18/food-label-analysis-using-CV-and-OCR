@@ -42,8 +42,12 @@ export const analyzeTextWithAI = async (text) => {
   }
 
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
-    
+     const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+//   const model = genAI.getGenerativeModel({ 
+//     model: "gemini-1.5-flash" 
+// }, { 
+//     apiVersion: 'v1beta' 
+// });    
     const prompt = `Analyze this food label content and provide a clear, structured analysis:
 
 Overall Healthiness Rating:
